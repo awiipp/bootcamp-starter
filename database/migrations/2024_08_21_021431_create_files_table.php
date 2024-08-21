@@ -13,7 +13,13 @@ return new class extends Migration
     {
         Schema::create('files', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->tinyInteger('is_important');
+            $table->softDeletes();
             $table->timestamps();
+
+            $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('folder_id')->constrained('folders');
         });
     }
 
