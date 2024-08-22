@@ -37,7 +37,7 @@
                 </label>
                 <input class="border border-black rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-blue-500" id="confirm-password" type="password" placeholder="********">
             </div>
-            <div class="flex items-center justify-center mt-12 mb-12">
+            <div class="flex items-center justify-center mt-20 mb-20">
                 <img src="{{ asset('assets/VaultX.png') }}" alt="VaultX" class="w-30 h-15">
             </div>
             <div class="flex items-center justify-center">

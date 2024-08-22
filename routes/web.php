@@ -18,3 +18,4 @@ Route::get('/akademik', fn () => view('akademik.index'));
 Route::get('/kategori', fn () => view('kategori.index'));
 Route::get('/kategori-detail', fn () => view('kategori.detail'));
 Route::get('/cari', fn () => view('cari.index'));
+Route::get('/signup', fn () => view('auth.signup'));
