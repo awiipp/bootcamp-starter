@@ -16,3 +16,5 @@ Route::get('/beranda', fn () => view('beranda.index'));
 Route::get('/penting', fn () => view('penting.index'));
 Route::get('/kategori', fn () => view('kategori.index'));
 Route::get('/cari', fn () => view('cari.index'));
+Route::get('/signup', fn () => view('auth.signup'));
+
