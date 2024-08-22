@@ -13,24 +13,43 @@
       </div>
     </div>
   
-    <!-- Category Section -->
-    <div class="mt-6">
-      <h2 class="text-lg font-semibold">Kategori</h2>
-      <div class="mt-4 grid grid-cols-2 gap-4">
-        <!-- Category Buttons -->
-        <a href="/kategori-detail" class="p-4 text-center bg-blue-900 text-white rounded-lg">Akademik</a>
-        <a href="/kategori-detail" class="p-4 text-center bg-yellow-500 text-white rounded-lg">Kurikulum</a>
-        <a href="/kategori-detail" class="p-4 text-center bg-blue-900 text-white rounded-lg">Administrasi sekolah</a>
-        <a href="/kategori-detail" class="p-4 text-center bg-yellow-500 text-white rounded-lg">Bimbingan dan konseling</a>
-        <a href="/kategori-detail" class="p-4 text-center bg-blue-900 text-white rounded-lg">Keuangan</a>
-        <a href="/kategori-detail" class="p-4 text-center bg-yellow-500 text-white rounded-lg">Humas dan kerjasama</a>
-        <a href="/kategori-detail" class="p-4 text-center bg-blue-900 text-white rounded-lg">Sarana dan Prasarana</a>
-        <a href="/kategori-detail" class="p-4 text-center bg-yellow-500 text-white rounded-lg">Perpustakaan</a>
-        <a href="/kategori-detail" class="p-4 text-center bg-blue-900 text-white rounded-lg">Kesiswaan</a>
-        <a href="/kategori-detail" class="p-4 text-center bg-yellow-500 text-white rounded-lg">Laporan dan Evaluasi</a>
+    <!-- Akademik Section -->
+  <div>
+    <h2 class="text-lg font-semibold">Kategori > Akademik</h2>
+    <div class="grid grid-cols-2 gap-4 mt-4">
+      <!-- Folder Items -->
+      <div class="p-4 bg-gray-100 rounded-lg flex flex-col items-center">
+        <img src="{{ asset('assets/Folder.jpg') }}" alt="ANBK 2024" class="w-16 h-16">
+        <p class="mt-2 text-center font-medium">ANBK 2024</p>
+      </div>
+      <div class="p-4 bg-gray-100 rounded-lg flex flex-col items-center">
+        <img src="{{ asset('assets/Folder.jpg') }}" alt="STS 2023/24 Semester 1" class="w-16 h-16">
+        <p class="mt-2 text-center font-medium">STS 2023/24 Semester 1</p>
+      </div>
+      <div class="p-4 bg-gray-100 rounded-lg flex flex-col items-center">
+        <img src="{{ asset('assets/Folder.jpg') }}" alt="SAS 2023/24 Semester 1" class="w-16 h-16">
+        <p class="mt-2 text-center font-medium">SAS 2023/24 Semester 1</p>
+      </div>
+      <div class="p-4 bg-gray-100 rounded-lg flex flex-col items-center">
+        <img src="{{ asset('assets/Folder.jpg') }}" alt="USBN 2024" class="w-16 h-16">
+        <p class="mt-2 text-center font-medium">USBN 2024</p>
+      </div>
+      <div class="p-4 bg-gray-100 rounded-lg flex flex-col items-center">
+        <img src="{{ asset('assets/Folder.jpg') }}" alt="Tes TOEIC 2024" class="w-16 h-16">
+        <p class="mt-2 text-center font-medium">Tes TOEIC 2024</p>
+      </div>
+      <div class="p-4 bg-gray-100 rounded-lg flex flex-col items-center">
+        <img src="{{ asset('assets/Folder.jpg') }}" alt="Ujian Sekolah 2023/24" class="w-16 h-16">
+        <p class="mt-2 text-center font-medium">Ujian Sekolah 2023/24</p>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </div>
   
+    {{-- Category Kurikulum --}}
+    
     <!-- Bottom Navigation -->
     <div class="fixed bottom-0 left-0 right-0 bg-white py-4 flex justify-around border-t border-gray-200">
       <button class="text-center">
