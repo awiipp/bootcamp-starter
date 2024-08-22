@@ -25,18 +25,58 @@
                 </label>
                 <input class="border border-black rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-blue-500" id="email" type="email" placeholder="Email">
             </div>
-            <div class="mb-4">
-                <label class="block text-black text-sm font-bold mb-2" for="password">
-                    Password
-                </label>
-                <input class="border border-black rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-blue-500" id="password" type="password" placeholder="********">
-            </div>
-            <div class="mb-8">
-                <label class="block text-black text-sm font-bold mb-2" for="confirm-password">
-                    Confirm Password
-                </label>
-                <input class="border border-black rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-blue-500" id="confirm-password" type="password" placeholder="********">
-            </div>
+            <!-- Password Field -->
+<div class="mb-4">
+    <label class="block text-black text-sm font-bold mb-2" for="password">
+        Password
+    </label>
+    <div class="relative">
+        <input id="password" class="border border-black rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-blue-500 pr-10" type="password" placeholder="Password">
+        <button type="button" onclick="togglePasswordVisibility('password', 'eye-icon')" class="absolute inset-y-0 right-0 pr-3 flex items-center">
+            <svg id="eye-icon" class="h-5 w-5 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<!-- Confirm Password Field -->
+<div class="mb-4">
+    <label class="block text-black text-sm font-bold mb-2" for="confirm-password">
+        Confirm Password
+    </label>
+    <div class="relative">
+        <input id="confirm-password" class="border border-black rounded-lg w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-blue-500 pr-10" type="password" placeholder="Confirm Password">
+        <button type="button" onclick="togglePasswordVisibility('confirm-password', 'eye-icon-confirm')" class="absolute inset-y-0 right-0 pr-3 flex items-center">
+            <svg id="eye-icon-confirm" class="h-5 w-5 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<script>
+    function togglePasswordVisibility(inputId, iconId) {
+        const passwordInput = document.getElementById(inputId);
+        const eyeIcon = document.getElementById(iconId);
+
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            eyeIcon.innerHTML = `
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A6.96 6.96 0 0112 19c-4.477 0-8.268-2.943-9.542-7a12.06 12.06 0 012.643-4.608l1.414 1.414A9.955 9.955 0 002 12c1.274 4.057 5.065 7 9.542 7 1.217 0 2.388-.233 3.457-.675l1.418 1.418a11.993 11.993 0 01-2.542.682zm7.07-7.07l-1.415-1.415a9.978 9.978 0 00-1.93-1.931l-1.415 1.415A6.96 6.96 0 0112 15c-1.797 0-3.442-.682-4.657-1.793l-1.418 1.418A9.955 9.955 0 002 12c1.274 4.057 5.065 7 9.542 7 1.217 0 2.388-.233 3.457-.675l1.418 1.418A11.993 11.993 0 0112 19a12.06 12.06 0 01-4.608-2.643l1.415-1.415A6.96 6.96 0 0012 15a6.96 6.96 0 001.793-.242l1.418-1.418A9.978 9.978 0 0015 12a9.955 9.955 0 00-1.793-4.657l1.418-1.418a12.06 12.06 0 012.643 4.608zM12 11a1 1 0 100 2 1 1 0 000-2z"/>
+            `;
+        } else {
+            passwordInput.type = 'password';
+            eyeIcon.innerHTML = `
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+            `;
+        }
+    }
+</script>
+
             <div class="flex items-center justify-center mt-20 mb-20">
                 <img src="{{ asset('assets/VaultX.png') }}" alt="VaultX" class="w-30 h-15">
             </div>
