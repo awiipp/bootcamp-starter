@@ -1,19 +1,8 @@
 @extends('layouts.main')
 
 @section('section')
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body class="bg-white flex items-center justify-center min-h-screen">
     <div class="w-full max-w-sm m-auto">
-         <form class="bg-white px-8 pt-6 pb-8 mb-4">
+         <form class="bg-gray-50 px-8 pt-6 pb-8 mb-4">
         <div class="flex flex-col items-center justify-center">
             <div class="w-16 h-16 bg-white-200 border border-black rounded-full flex items-center justify-center mb-2 mt-20">
                 <svg class="w-8 h-8 text-Black-600" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -81,8 +70,4 @@
             </p>
         </div>
         </form>
-</body>
-
-</html>
-
 @endsection

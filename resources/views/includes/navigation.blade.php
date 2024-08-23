@@ -35,6 +35,24 @@
                 <x-responsive-nav-link :href="route('some-page-route')" :active="request()->routeIs('some-page-route')">
                     {{ __('go to some page') }}
                 </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('profile')" :active="request()->routeIs('profile')">
+                    {{ __('Profile') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('beranda')" :active="request()->routeIs('beranda')">
+                    {{ __('Beranda') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('penting')" :active="request()->routeIs('penting')">
+                    {{ __('Penting') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('kategori')" :active="request()->routeIs('kategori')">
+                    {{ __('Kategori') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('signup')" :active="request()->routeIs('signup')">
+                    {{ __('Sign Up') }}
+                </x-responsive-nav-link>
+                <x-responsive-nav-link :href="route('login')" :active="request()->routeIs('login')">
+                    {{ __('Login') }}
+                </x-responsive-nav-link>
             </div>
         </div>
     </nav>
