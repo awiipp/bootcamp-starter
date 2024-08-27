@@ -13,12 +13,13 @@ return new class extends Migration
     {
         Schema::create('folders', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->unique();
-            $table->tinyInteger('is_important');
+            $table->string('name');
+            $table->string('slug')->unique();
+            $table->boolean('is_important');
             $table->softDeletes();
             $table->timestamps();
 
-            $table->foreignId('user_id')->constrained('users');
+            // $table->foreignId('user_id')->constrained('users');
             $table->foreignId('category_id')->constrained('categories');
         });
     }

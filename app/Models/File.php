@@ -14,10 +14,10 @@ class File extends Model
         'name',
     ];
 
-    public function user(): BelongsTo
-    {
-        return $this->belongsTo(User::class);
-    }
+    // public function user(): BelongsTo
+    // {
+    //     return $this->belongsTo(User::class);
+    // }
 
     public function folder(): BelongsTo
     {

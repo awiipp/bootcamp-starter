@@ -11,14 +11,14 @@
           <p class="text-gray-500">Selamat datang di VaultX</p>
         </div>
       </div>
-
+      
     <!-- My Folders -->
     <div class="mt-8">
-      <h2 class="text-lg font-semibold">Folder yang dihapus</h2>
+      <h2 class="text-lg font-semibold">Folder Penting</h2>
       <div class="mt-4 grid grid-cols-2 gap-4">
         <a href="">
           <div class="p-4 border-2 border-amber-400 hover:bg-amber-400 duration-300 rounded-lg text-center">
-            <p>Folder yang dihapus</p>
+            <p>Folder penting</p>
           </div>
         </a>
       </div>
@@ -26,18 +26,18 @@
       <div class="mt-4 grid grid-cols-2 gap-4">
         <a href="">
           <div class="p-4 border-2 border-amber-400 hover:bg-amber-400 duration-300 rounded-lg text-center">
-            <p>Folder yang dihapus</p>
+            <p>Folder penting</p>
           </div>
         </a>
       </div>
     </div>
 
     <div class="mt-8">
-        <h2 class="text-lg font-semibold">File yang dihapus</h2>
+        <h2 class="text-lg font-semibold">File penting</h2>
         <div class="mt-4 grid grid-cols-2 gap-4">
           <a href="">
             <div class="p-4 border-2 border-amber-400 hover:bg-amber-400 duration-300 rounded-lg text-center">
-              <p>File yang dihapus</p>
+              <p>File penting</p>
             </div>
           </a>
         </div>
@@ -45,7 +45,7 @@
         <div class="mt-4 grid grid-cols-2 gap-4">
           <a href="">
             <div class="p-4 border-2 border-amber-400 hover:bg-amber-400 duration-300 rounded-lg text-center">
-              <p>File yang dihapus</p>
+              <p>File penting</p>
             </div>
           </a>
         </div>

@@ -53,6 +53,9 @@
                 <x-responsive-nav-link :href="route('login')" :active="request()->routeIs('login')">
                     {{ __('Login') }}
                 </x-responsive-nav-link>
+                <x-responsive-nav-link href="https://www.figma.com/design/6u9ZH9K0ji3Zc6ffWfSKsn/Untitled?node-id=0-1&t=wHlwr8iM9J3GPQ6D-0" target="_blank">
+                    {{ __('Prototipe') }}
+                </x-responsive-nav-link>
             </div>
         </div>
     </nav>

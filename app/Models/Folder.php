@@ -14,7 +14,10 @@ class Folder extends Model
 
     protected $fillable = [
         'name',
-        'is_important'
+        'slug',
+        'is_important',
+        'category_id',
+        'user_id'
     ];
 
     public function category(): BelongsTo
@@ -22,13 +25,19 @@ class Folder extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function user(): BelongsTo
-    {
-        return $this->belongsTo(User::class);
-    }
+    // public function user(): BelongsTo
+    // {
+    //     return $this->belongsTo(User::class);
+    // }
 
     public function files(): HasMany
     {
         return $this->hasMany(File::class);
     }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
 }
